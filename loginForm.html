@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập</title>
+  <style>
+  *{
+    margin: 0;
+  }
+  form{
+    position: relative;
+    height: 100vh;
+  }
+
+  h1{
+    text-align: center;
+    padding-top: 40px;
+    margin: 0;
+  }
+
+  .bg_login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  .div-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+ input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+  </style>
+</head>
+<body>
+  <form action="login.php" method="POST">
+    <h1>HỆ THỐNG QUẢN LÝ SINH VIÊN</h1>
+    <div class="div-center">
+    <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="btnSubmit" value="Login">
+      
+    </div>
+    <img class="bg_login" src="img/bg_login.jpg" alt="">
+  </form>
+</body>
+</html>
